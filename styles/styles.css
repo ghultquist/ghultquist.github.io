@@ -33,8 +33,8 @@ p {
 
 .colorful_h2{
   animation-name: colors;
-  animation-duration: 7s;
-  animation-iteration-count: 3;
+  animation-duration: 6s;
+  animation-iteration-count: 2;
 }
 
 @keyframes colors {
@@ -130,6 +130,10 @@ a:active {
    width: 33.3%;
  }
 
+
+
+
+/* SIDE NAVIGATION BAR ON PORTFOLIO PAGE */
  .sidenav {
    border-radius: 20px;
    width: 130px;
@@ -149,21 +153,18 @@ a:active {
    text-decoration: none;
    font-size: 20px;
    color: #FFEBAD;
+   background: #393E41;
    display: block;
  }
 
-nav-link {
-  text-align: center;
-}
+ .nav-pills > li.active > a,
+ .nav-pills > li.active > a:hover,
+ .nav-pills > li.active > a:focus {
+     color: #F9A48B;
+     background-color: #181F25;
+     }
 
-nav-link a:hover {
-   color: #FFD147;
-   background: #393E41
- }
-
-nav-link a:active {
-    color: #FFD147;
-  }
+/* END */
 
 
 .portfolioblock{
