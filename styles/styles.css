@@ -31,6 +31,21 @@ p {
   font-size: 20px;
 }
 
+.colorful_h2{
+  animation-name: colors;
+  animation-duration: 7s;
+  animation-iteration-count: 3;
+}
+
+@keyframes colors {
+  0%   {color:#FFDB70;}
+  17%  {color:#94ff70;}
+  34%  {color:#70ffff;}
+  51%  {color:#7070ff;}
+  68% {color:#ff70ff;}
+  85% {color:#ff7070;}
+  100% {color:#FFDB70;}
+}
 
 /* unvisited link */
 a:link {
@@ -219,6 +234,8 @@ nav-link a:active {
 .aboutme-picture{
   border-radius: 15px;
 }
+
+
 
  @media screen and (max-height: 450px) {
    .sidenav {padding-top: 15px;}
