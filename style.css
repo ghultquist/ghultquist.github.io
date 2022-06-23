@@ -93,7 +93,7 @@ h4{
   font-family: 'Lora';
   font-size: 1.25rem;
 }
-.round-picture{
+img{
   border-radius: 15px;
 }
 .img-framed{
@@ -137,7 +137,7 @@ hr.purple{
   padding-bottom: 1rem;
 }
 
-.projects{
+.project_prev{
   background: linear-gradient(#FFABD900 0%,  #EAB6FC 3%, #EAB6FC 97%, #FFABD900 100% ) ;
   padding-top: 2rem;
   color: #FFFFFF;
@@ -181,31 +181,40 @@ footer h3{
   padding-bottom: 2rem;
 }
 
-.box{
-  float:left;
-  background-color: #0162b1;
-  color: #FFFFFF;
-  width: 125px;
-  line-height: 125px;
-  text-align: center;
-  margin: 10px;
-  display: none;
-}
-.show{
-  display: block;
-}
-.btn{
-  border:none;
-  outline:none;
-  margin-bottom:20px;
-  padding: 12px 16px;
-  background-color: #f1f1f1;
+/*Project filter 1*/
+.button-value {
+  border: 2px solid #6759ff;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #6759ff;
   cursor: pointer;
 }
-.btn:hover{
-  background-color: #D5D5D5;
+.active {
+  background-color: #6759ff;
+  color: #ffffff;
 }
+#projects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+.image-container {
+  text-align: center;
+}
+#projects img {
+  max-width: 100%;
+  object-fit: contain;
 
+}
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.hide {
+  display: none;
+}
 
 
 
@@ -233,6 +242,11 @@ footer h3{
   hr.purple{
     width: 95%;
   }
+}
+#projects {
+  grid-template-columns: auto auto;
+  grid-column-gap: 1em;
+}
 }
 @media (max-width: 576px) {
 
