@@ -21,19 +21,25 @@ p{
   font-weight: 900;
 }
 .navbar{
-  padding: .8rem;
-  background: linear-gradient(#FFABD9 75%,  #FFABD900 100%)
+  padding: 1rem;
+  background: linear-gradient(#FFABD9 75%,  #FFABD900 100%);
 }
 .navbar-nav li{
   padding-right: 20px;
+  color: #FFFFFF;
 }
 .nav-link{
   font-size: 1.1em !important;
   font-weight: 900;
-  color: #FFFFFF !important;
+  color: #FFFFFF;
 }
-.active, .nav-link:hover{
-  color: #FF0000 !important;
+.nav-link:active, .nav-link:hover{
+  color: #FF0000;
+}
+.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .cartoon_h2{
   animation-name: color_cartoon;
@@ -93,6 +99,17 @@ h4{
   font-family: 'Lora';
   font-size: 1.25rem;
 }
+h5{
+  color:#9908C9;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+h6{
+  font-family: 'Lora';
+  color:#F20A95;
+  font-weight: 400;
+  font-size: 1rem;
+}
 img{
   border-radius: 15px;
 }
@@ -109,10 +126,6 @@ img{
 }
 .intro h2{
   color: #F20A95;
-}
-.card{
-  background-color: #FFE0F1;
-  border-radius: 15px;
 }
 .card-btn{
   background-color: #EAB6FC;
@@ -183,21 +196,24 @@ footer h3{
 
 /*Project filter 1*/
 .button-value {
-  border: 2px solid #6759ff;
+  border: 2px solid #FF0000;
   padding: 1em 2.2em;
   border-radius: 3em;
   background-color: transparent;
-  color: #6759ff;
+  color: #FF0000;
+  font-family: 'Lora';
+  font-weight: 700;
   cursor: pointer;
 }
-.active {
-  background-color: #6759ff;
-  color: #ffffff;
+#search a:active {
+  background-color: #FF0000;
+  color: #ffffff !important;
 }
 #projects {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-column-gap: 1.5em;
+  justify-items: center;
+  grid-gap: 2em;
   padding: 2em 0;
 }
 .image-container {
@@ -207,6 +223,14 @@ footer h3{
   max-width: 100%;
   object-fit: contain;
 
+}
+#projects .card{
+  background-color: #FFE0F1;
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 15px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
 }
 .container {
   padding-top: 1em;
@@ -242,7 +266,6 @@ footer h3{
   hr.purple{
     width: 95%;
   }
-}
 #projects {
   grid-template-columns: auto auto;
   grid-column-gap: 1em;

@@ -4,37 +4,55 @@ let projects = {
       projectName: "X",
       category: "game",
       year: "2022",
-      image: "assets/game_scrnshot.png",
+      role: "Programmer, Artist, & Writer",
+      tools: "Godot (game engine), Aseprite (pixel art software)",
+      description: "A video game about loneliness created for my master's thesis.",
+      image: "assets/game_scrnshot169.png",
     },
     {
       projectName: "YEPT Website",
       category: "ux",
       year: "2022",
-      image: "assets/YEPT_logo.png",
+      role: "UX Designer & UI Developer",
+      tools: "Squarespace, Premiere Pro (for tutorials)",
+      description: "A website created for the Youth Environmental Press Team.",
+      image: "assets/YEPT_logo169.png",
     },
     {
       projectName: "X at the Airport",
       category: "video",
       year: "2022",
-      image: "assets/YEPT_logo.png",
+      role: "Artist & Animator",
+      tools: "After Effects, Illustrator, Clip Studio Paint",
+      description: "A short animation about the airport.",
+      image: "assets/x_airport.png",
     },
     {
       projectName: "Tick",
       category: "video",
       year: "2021",
-      image: "assets/tick_BTS.png",
+      role: "Special Effects Artist",
+      tools: "Makeup & Props (variety of fake blood, etc.)",
+      description: "A short experimental horror film.",
+      image: "assets/tick_BTS169.png",
     },
     {
       projectName: "Axil",
       category: "game",
       year: "2020",
+      role: "Programmer",
+      tools: "Makeup & Props (variety of fake blood, etc.)",
+      description: "Godot (game engine)",
       image: "assets/axil.jpg",
     },
     {
       projectName: "Superfoot",
       category: "video",
       year: "2019",
-      image: "assets/superfoot_award.png",
+      role: "Special Effects Artist",
+      tools: "Makeup & Props (variety of fake blood, etc.)",
+      description: "A short film about neighbors.",
+      image: "assets/superfoot_award_169.png",
     },
   ],
 };
@@ -60,10 +78,10 @@ for (let i of projects.data) {
   name.classList.add("project-name");
   name.innerText = i.projectName.toUpperCase();
   container.appendChild(name);
-  //year
-  let year = document.createElement("h6");
-  year.innerText = i.year;
-  container.appendChild(year);
+  //description
+  let description = document.createElement("h6");
+  description.innerText = i.description;
+  container.appendChild(description);
 
   card.appendChild(container);
   document.getElementById("projects").appendChild(card);
