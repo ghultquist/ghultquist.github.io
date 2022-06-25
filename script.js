@@ -167,6 +167,7 @@ for (let i of projects.data) {
 
   //click project name
   name.addEventListener('click', openMoreInfo);
+  card.addEventListener('click', openMoreInfo);
 }
 
 //parameter passed from button (Parameter same as category)

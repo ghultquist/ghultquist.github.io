@@ -107,7 +107,6 @@ h5{
 h5:hover{
   color: #FF0000;
   cursor: pointer;
-
 }
 h6{
   font-family: 'Lora';
@@ -223,11 +222,16 @@ footer h3{
 }
 #projects .card{
   background-color: #FFE0F1;
-  max-width: 18em;
+  max-width: 20em;
   margin-top: 1em;
   padding: 1em;
   border-radius: 15px;
   box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+#projects .card:hover{
+  background-color: #FFABD9;
+  cursor: pointer;
+
 }
 .container {
   padding-top: 1em;
