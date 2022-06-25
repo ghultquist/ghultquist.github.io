@@ -31,10 +31,10 @@ p{
 .nav-link{
   font-size: 1.1em !important;
   font-weight: 900;
-  color: #FFFFFF;
+  color: #FFFFFF !important;
 }
 .nav-link:active, .nav-link:hover{
-  color: #FF0000;
+  color: #FF0000 !important;
 }
 .sticky-top {
   position: fixed;
@@ -205,7 +205,7 @@ footer h3{
   font-weight: 700;
   cursor: pointer;
 }
-#search a:active {
+.button-value:active, .button-value:hover {
   background-color: #FF0000;
   color: #ffffff !important;
 }
