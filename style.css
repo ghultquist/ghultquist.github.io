@@ -104,6 +104,11 @@ h5{
   font-weight: 600;
   font-size: 1.25rem;
 }
+h5:hover{
+  color: #FF0000;
+  cursor: pointer;
+
+}
 h6{
   font-family: 'Lora';
   color:#F20A95;
@@ -136,15 +141,7 @@ hr.purple{
   color: #b60af0;
   width: 98.4%;
 }
-/*
-.projects{
-  font-size: 3rem;
-  text-shadow: 2px 2px 0 #FF0000, 4px 4px 0 #AD5CFF, 6px 6px 0 #F20A95;
-  letter-spacing: .5rem;
-  color: #FFFFFF !important;
-  font-weight: 700;
-}
-*/
+
 .welcome{
   padding-top: 1rem;
   padding-bottom: 1rem;

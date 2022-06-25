@@ -10,6 +10,7 @@ let projects = {
       description: "A game about loneliness created for my master's thesis.",
       long_desc: "",
       image: "assets/game_scrnshot169.png",
+      page: "x.html",
     },
     {
       projectName: "YEPT Website",
@@ -21,6 +22,7 @@ let projects = {
       description: "A website created for Youth Environmental Press Team.",
       long_desc: "",
       image: "assets/yept.png",
+      page: "yept.html",
     },
     {
       projectName: "X at the Airport",
@@ -32,6 +34,7 @@ let projects = {
       description: "A short animation about the airport.",
       long_desc: "",
       image: "assets/x_airport.png",
+      page: "axil.html",
     },
     {
       projectName: "YouTour",
@@ -43,6 +46,7 @@ let projects = {
       description: "An app prototype about being a tourist in your own town.",
       long_desc: "",
       image: "assets/youtour.png",
+      page: "youtour.html",
     },
     {
       projectName: "Tick",
@@ -54,6 +58,7 @@ let projects = {
       description: "A short experimental horror film.",
       long_desc: "",
       image: "assets/tick_BTS169.png",
+      page: "tick.html"
     },
     {
       projectName: "Axil",
@@ -124,6 +129,13 @@ let projects = {
   ],
 };
 
+//create information overlay
+var openMoreInfo = function(value){
+  alert(event.target.innerHTML);
+  //let card = document.createElement("div");
+  //document.getElementById("overlay").style.display = "block";
+}
+
 for (let i of projects.data) {
   //Create Card
   let card = document.createElement("div");
@@ -152,6 +164,9 @@ for (let i of projects.data) {
 
   card.appendChild(container);
   document.getElementById("projects").appendChild(card);
+
+  //click project name
+  name.addEventListener('click', openMoreInfo);
 }
 
 //parameter passed from button (Parameter same as category)
@@ -206,6 +221,9 @@ document.getElementById("search").addEventListener("click", () => {
     }
   });
 });
+
+
+
 
 //Initially display all projects
 window.onload = () => {
