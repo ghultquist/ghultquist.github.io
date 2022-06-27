@@ -130,10 +130,35 @@ let projects = {
 };
 
 //create information overlay
-var openMoreInfo = function(value){
-  alert(event.target.innerHTML);
-  //let card = document.createElement("div");
-  //document.getElementById("overlay").style.display = "block";
+var openMoreInfo = function(){
+  //Create Modal
+  var modal = document.getElementById("modal");
+  //Create Box
+  let box = document.createElement("div");
+  box.classList.add("modal-content");
+  //container
+  let container = document.createElement("div");
+  container.classList.add("container");
+  //project name
+  let name = document.createElement("h5");
+  name.textContent="hey yo it worked!";
+  //name.classList.add("project-name");
+  //name.innerText = i.projectName.toUpperCase();
+  container.appendChild(name);
+
+
+  box.appendChild(container);
+  modal.appendChild(box);
+
+  //display modal
+  modal.style.display = "block";
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
 }
 
 for (let i of projects.data) {
@@ -165,8 +190,7 @@ for (let i of projects.data) {
   card.appendChild(container);
   document.getElementById("projects").appendChild(card);
 
-  //click project name
-  name.addEventListener('click', openMoreInfo);
+  //click project for more information
   card.addEventListener('click', openMoreInfo);
 }
 
@@ -222,7 +246,6 @@ document.getElementById("search").addEventListener("click", () => {
     }
   });
 });
-
 
 
 
