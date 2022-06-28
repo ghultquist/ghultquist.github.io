@@ -130,7 +130,7 @@ let projects = {
 };
 
 //create information overlay
-var openMoreInfo = function(){
+var openMoreInfo = function(i){
   //Create Modal
   var modal = document.getElementById("modal");
   //Create Box
@@ -141,9 +141,8 @@ var openMoreInfo = function(){
   container.classList.add("container");
   //project name
   let name = document.createElement("h5");
-  name.textContent="hey yo it worked!";
-  //name.classList.add("project-name");
-  //name.innerText = i.projectName.toUpperCase();
+  name.classList.add("project-name");
+  name.innerText = i.currentTarget.name
   container.appendChild(name);
 
 
@@ -157,6 +156,9 @@ var openMoreInfo = function(){
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      modal.removeChild(box);
+
+
     }
   }
 }
@@ -192,6 +194,9 @@ for (let i of projects.data) {
 
   //click project for more information
   card.addEventListener('click', openMoreInfo);
+  card.name = i.projectName;
+  card.category = i.category;
+  card.year = i.year;
 }
 
 //parameter passed from button (Parameter same as category)
