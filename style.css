@@ -101,7 +101,7 @@ h4{
 }
 h5{
   color:#9908C9;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 1.25rem;
 }
 h5:hover{
@@ -110,9 +110,9 @@ h5:hover{
 }
 h6{
   font-family: 'Lora';
-  color:#F20A95;
+  color:#9908C9;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 img{
   border-radius: 15px;
@@ -130,9 +130,6 @@ img{
 }
 .intro h2{
   color: #F20A95;
-}
-.card-btn{
-  background-color: #EAB6FC;
 }
 
 hr.purple{
@@ -191,7 +188,7 @@ footer h3{
 }
 
 /*Project filter 1*/
-.button-value {
+.button-value, .modal-btn {
   border: 2px solid #FF0000;
   padding: 1em 2.2em;
   border-radius: 3em;
@@ -201,7 +198,7 @@ footer h3{
   font-weight: 700;
   cursor: pointer;
 }
-.button-value:active, .button-value:hover {
+.button-value:active, .button-value:hover, .modal-btn:hover {
   background-color: #FF0000;
   color: #ffffff !important;
 }
@@ -233,9 +230,14 @@ footer h3{
   cursor: pointer;
 
 }
+.bold{
+  font-weight: 900;
+}
 .container {
   padding-top: 1em;
   color: #110f29;
+  text-align: center;
+
 }
 .hide {
   display: none;
@@ -257,13 +259,41 @@ footer h3{
 
 /* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  border-radius: 2em;
+  background-color: #FFE0F1;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
 }
+/*
+#modal .image-container{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 40%;
+  height: 100%;
+  overflow: hidden;
+}
+*/
+#modal img{
+  width: 100%;
+}
 
+#modal .container{
+  align-items: center;
+}
+.metadata{
+  text-align: left;
+}
+#modal h6, #modal p{
+  padding-bottom: .7em;
+}
+.modal-btn{
+  font-family: 'Nunito';
+  font-weight: 900;
+  font-size: 1.2rem;
+}
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -284,6 +314,9 @@ footer h3{
 
 }
 @media (max-width: 768px) {
+  #modal h1{
+    font-size: 2rem;
+  }
   .intro{
     text-align: center;
     margin-top: 0px;
@@ -306,6 +339,9 @@ footer h3{
 #projects {
   grid-template-columns: auto auto;
   grid-column-gap: 1em;
+}
+#modal img{
+  width: 80%;
 }
 }
 @media (max-width: 576px) {

@@ -10,11 +10,11 @@ let projects = {
       description: "A game about loneliness created for my master's thesis.",
       long_desc: "",
       image: "assets/game_scrnshot169.png",
-      page: "x.html",
+      emoji: "📺",
     },
     {
       projectName: "YEPT Website",
-      category: "ux",
+      category: "ux/ui",
       year: "2022",
       role: "UX Designer & UI Developer",
       tools: "Squarespace, Figma, Premiere Pro (for tutorials)",
@@ -22,7 +22,7 @@ let projects = {
       description: "A website created for Youth Environmental Press Team.",
       long_desc: "",
       image: "assets/yept.png",
-      page: "yept.html",
+      emoji: "🌱",
     },
     {
       projectName: "X at the Airport",
@@ -34,11 +34,11 @@ let projects = {
       description: "A short animation about the airport.",
       long_desc: "",
       image: "assets/x_airport.png",
-      page: "axil.html",
+      emoji: "✈️",
     },
     {
       projectName: "YouTour",
-      category: "ux",
+      category: "ux/ui",
       year: "2021",
       role: "UX Designer",
       tools: "Figma",
@@ -46,7 +46,7 @@ let projects = {
       description: "An app prototype about being a tourist in your own town.",
       long_desc: "",
       image: "assets/youtour.png",
-      page: "youtour.html",
+      emoji: "📱",
     },
     {
       projectName: "Tick",
@@ -58,7 +58,7 @@ let projects = {
       description: "A short experimental horror film.",
       long_desc: "",
       image: "assets/tick_BTS169.png",
-      page: "tick.html"
+      emoji: "⏰",
     },
     {
       projectName: "Axil",
@@ -70,6 +70,7 @@ let projects = {
       description: "A video game about gardening... in space!",
       long_desc: "As a part of the CS490 Software Production Studio, I worked on a multidisciplinary team of 6 students tasked with creating an original video game. I learned how to use Godot game engine; taught and learned from my group mates in the ways of art, programming, and production; researched licensing; and collaborated on ideas to make Axil, an extraterrestrial plant growing simulation game.",
       image: "assets/axil.jpg",
+      emoji: "🌻",
     },
     {
       projectName: "Queer Chocolatier",
@@ -78,9 +79,10 @@ let projects = {
       role: "Director & Editor",
       tools: "Premiere Pro",
       link: "https://www.youtube.com/watch?v=bikBnXSYpE8",
-      description: "A short documentary about Muncie's local LGBTQ+ sweets shop.",
+      description: "A short documentary about a local LGBTQ+ sweets shop.",
       long_desc: "This is a production that I led during my time as president of the university film group, Fringed. It was an honor and an amazing time to get to work with the head queer herself, Morgan Roddy.",
       image: "assets/queerchocolatier.png",
+      emoji: "🌈",
     },
     {
       projectName: "Home Sweet Home",
@@ -92,6 +94,7 @@ let projects = {
       description: "A short horror film about agoraphobia.",
       long_desc: "A short film about a person suffering from agoraphobia who refuses to leave their house until strange things start happening and paranoia overcomes them. This is a production by the university film group, Fringed. This film was featured in Ball State's 2020 Frog Baby Film Festival. As president I worked with my fellow film club member, Aaron Dwyer, to create this concept, write this script, and direct this short horror flick!",
       image: "assets/hsh.png",
+      emoji: "🏡",
     },
     {
       projectName: "Superfoot",
@@ -100,9 +103,10 @@ let projects = {
       role: "Special Effects Artist & Slate Operator",
       tools: "Makeup & Props (variety of fake blood, etc.)",
       link: "https://www.youtube.com/watch?v=7wtbBLzihB8",
-      description: "A short film about neighbors.",
+      description: "A short surreal film about neighbors.",
       long_desc: "A short film by my friend, Ian Mitchell. With loud parties happening each weekend across the street, a pair of roommates attempt to make a compromise with their neighbor. This film won Best Alternative Film at Ball State's 2019 Frog Baby Film Festival.",
       image: "assets/superfoot_award_169.png",
+      emoji: "🐰",
     },
     {
       projectName: "DJ Jannell",
@@ -114,6 +118,7 @@ let projects = {
       description: "A short documentary featuring Muncie's DJ Jannell.",
       long_desc: "A short documentary featuring DJ Jannell, a DJ in Muncie! This is a production by the university film group, Fringed. This was one of my first film projects while in university and my first time interviewing someone for a documentary. It was really interesting to get to sit down with and have a conversation someone as down-to-Earth and raw as Jannell Summers.",
       image: "assets/dj-jannell.png",
+      emoji: "🎧",
     },
     {
       projectName: "Cornfed Derby Dames",
@@ -122,12 +127,17 @@ let projects = {
       role: "Director, Editor, & Camera Operator",
       tools: "Premiere Pro",
       link: "https://www.youtube.com/watch?v=94_1P4VieZc",
-      description: "A short documentary about Muncie's roller derby team, the Cornfed Derby Dames.",
+      description: "A short documentary about Muncie's roller derby team.",
       long_desc: "This is a production by the university film group, Fringed. This film was featured in Ball State's 2019 Frog Baby Film Festival. Having started filming in the fall of 2017, this was the first production I worked on while at university. ",
       image: "assets/cornfed.png",
+      emoji: "🌽",
     },
   ],
 };
+
+var openLink = function(i){
+  window.open(i.currentTarget.link);
+}
 
 //create information overlay
 var openMoreInfo = function(i){
@@ -140,24 +150,94 @@ var openMoreInfo = function(i){
   let container = document.createElement("div");
   container.classList.add("container");
   //project name
-  let name = document.createElement("h5");
-  name.classList.add("project-name");
-  name.innerText = i.currentTarget.name
+  let name = document.createElement("h1");
+  name.innerText = i.currentTarget.name + " (" + i.currentTarget.year + ")";
   container.appendChild(name);
+  //row
+  let row = document.createElement("div");
+  row.classList.add("row");
+
+  //image div
+  let imgContainer = document.createElement("div");
+  imgContainer.classList.add("col-lg-6");
+  imgContainer.classList.add("image-container");
+  //img tag
+  let image = document.createElement("img");
+  image.setAttribute("src", i.currentTarget.image);
+  imgContainer.appendChild(image);
+  row.appendChild(imgContainer);
+
+  //metadata
+  let metadata = document.createElement("div");
+  metadata.classList.add("col-lg-6");
+  metadata.classList.add("metadata");
+  //category
+  let category = document.createElement("h6");
+  var categoryLabel = document.createElement('span');
+  categoryLabel.classList.add("bold");
+  categoryLabel.innerHTML = "Category: "
+  var categoryData = document.createElement('span');
+  categoryData.innerText = i.currentTarget.category;
+  category.appendChild(categoryLabel);
+  category.appendChild(categoryData);
+  metadata.appendChild(category);
+  //role
+  let role = document.createElement("h6");
+  var roleLabel = document.createElement('span');
+  roleLabel.classList.add("bold");
+  roleLabel.innerHTML = "Role: "
+  var roleData = document.createElement('span');
+  roleData.innerText = i.currentTarget.role;
+  role.appendChild(roleLabel);
+  role.appendChild(roleData);
+  metadata.appendChild(role);
+  //tool
+  let tools = document.createElement("h6");
+  var toolsLabel = document.createElement('span');
+  toolsLabel.classList.add("bold");
+  toolsLabel.innerHTML = "Tools used: "
+  var toolsData = document.createElement('span');
+  toolsData.innerText = i.currentTarget.tools;
+  tools.appendChild(toolsLabel);
+  tools.appendChild(toolsData);
+  metadata.appendChild(tools);
+  //tool
+  let long_desc = document.createElement("p");
+  long_desc.innerText = i.currentTarget.long_desc;
+  metadata.appendChild(long_desc);
+
+  //link to project
+  let linktoproject = document.createElement("btn");
+  linktoproject.classList.add("modal-btn");
+
+  if (i.currentTarget.category == "ux/ui"){
+    linktoproject.innerText = "View Project " + i.currentTarget.emoji;
+  } else if (i.currentTarget.category == "video"){
+    linktoproject.innerText = "Watch Video " + i.currentTarget.emoji;
+  } else if (i.currentTarget.category == "game"){
+    linktoproject.innerText = "Play Game " + i.currentTarget.emoji;
+  }
+  linktoproject.link = i.currentTarget.link;
+  linktoproject.addEventListener('click', openLink);
+  metadata.appendChild(linktoproject);
+  row.appendChild(metadata);
 
 
+  container.appendChild(row);
   box.appendChild(container);
+
   modal.appendChild(box);
 
   //display modal
   modal.style.display = "block";
+  $('body').css('overflow', 'hidden');
 
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      $('body').css('overflow', 'auto');
       modal.removeChild(box);
-
 
     }
   }
@@ -185,7 +265,7 @@ for (let i of projects.data) {
   name.innerText = i.projectName.toUpperCase();
   container.appendChild(name);
   //description
-  let description = document.createElement("h6");
+  let description = document.createElement("p");
   description.innerText = i.description;
   container.appendChild(description);
 
@@ -197,6 +277,13 @@ for (let i of projects.data) {
   card.name = i.projectName;
   card.category = i.category;
   card.year = i.year;
+  card.role = i.role;
+  card.tools = i.tools;
+  card.link = i.link;
+  card.description = i.description;
+  card.long_desc = i.long_desc;
+  card.image = i.image;
+  card.emoji = i.emoji
 }
 
 //parameter passed from button (Parameter same as category)
