@@ -7,7 +7,7 @@ html, body {
   width: 100%;
   font-family: 'Nunito';
   background-color: #FFE0F1;
-  color: #FBFF12;
+  color: #9D00D1;
 }
 p{
   font-family: 'Lora';
@@ -46,7 +46,15 @@ p{
 }
 .navbar{
   padding: 1rem;
-  background: linear-gradient(#FFE0F1 75%,  #FFABD900 100%);
+  background: linear-gradient(#FFC6FF 75%,  #FFABD900 100%);
+}
+.navbar-toggler-icon {
+  border-color: #9D00D1;
+}
+.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .navbar-nav li{
   padding-right: 20px;
@@ -120,9 +128,10 @@ h3{
 }
 h4{
   color:#9D00D1;
-  font-weight: 400;
+  font-weight: 500;
   font-family: 'Lora';
   font-size: 1.25rem;
+  padding-bottom: .5rem;
 }
 h5{
   color:#F5199D;
@@ -150,6 +159,7 @@ img{
 }
 .intro h1{
   font-size: 4.5rem;
+
   padding-bottom: .75rem;
   font-family: 'Nunito';
 }
