@@ -59,11 +59,13 @@ p{
 .nav-link:active, .nav-link:hover{
   color: #0a0af0 !important;
 }
+/*
 .sticky-top {
   position: fixed;
   top: 0;
   width: 100%;
 }
+*/
 .cartoon_h2{
   animation-name: color_cartoon;
   animation-duration: 2s;
