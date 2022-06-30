@@ -13,20 +13,43 @@ p{
   font-family: 'Lora';
   color: #9D00D1;
 }
+/*
+.play-on-hover{
+  width: 50px;
+  height: 50px;
+  background-image: url(assets/heartstill.png);
+  background-size:cover;
+  cursor:pointer;
+}
+.play-on-hover:hover {
+  background-image: url(assets/heartgif.gif);
+}
+*/
 .hi-gwyn{
   font-size: 2rem;
-  text-shadow: 3px 3px 0 #FF0000, 5px 5px 0 #AD5CFF, 7px 7px 0 #9D00D1;
   letter-spacing: .5rem;
-  color: #FFFFFF !important;
+  color: #000000 !important;
   font-weight: 900;
+  text-shadow: 1px 1px 0 #B5B5FC, 2px 2px 0 #E28AFF, 3px 3px 0 #FCB6E0;
+  font-style: italic;
+  padding-bottom: 1rem;
+}
+.hi-gwyn:hover{
+  animation-name: nameHover;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  text-shadow: 2px 2px 0 #B5B5FC, 4px 4px 0 #E28AFF, 6px 6px 0 #FCB6E0;
+}
+@keyframes nameHover {
+  0%   {text-shadow: 1px 1px 0 #B5B5FC, 2px 2px 0 #E28AFF, 3px 3px 0 #FCB6E0;}
+  100% {text-shadow: 2px 2px 0 #B5B5FC, 4px 4px 0 #E28AFF, 6px 6px 0 #FCB6E0;}
 }
 .navbar{
   padding: 1rem;
-  background: linear-gradient(#FFABD9 75%,  #FFABD900 100%);
+  background: linear-gradient(#FFE0F1 75%,  #FFABD900 100%);
 }
 .navbar-nav li{
   padding-right: 20px;
-  color: #FFFFFF;
 }
 .nav-link{
   font-size: 1.1em !important;
@@ -34,7 +57,7 @@ p{
   color: #9D00D1 !important;
 }
 .nav-link:active, .nav-link:hover{
-  color: #FF0000 !important;
+  color: #0a0af0 !important;
 }
 .sticky-top {
   position: fixed;
@@ -69,12 +92,12 @@ p{
   animation-name: color_create;
   animation-duration: 4s;
   animation-iteration-count: 1;
-  color:#F05000;
+  color:#D60000;
 }
 @keyframes color_create {
   0%   {color:#9D00D1;}
   75%   {color:#9D00D1;}
-  100% {color:#F05000;}
+  100% {color:#D60000;}
 }
 
 h1{
@@ -83,7 +106,7 @@ h1{
   font-weight: 900;
 }
 h2{
-  color: #FF0000;
+  color: #9D00D1;
   font-size: 2rem;
   font-weight: 600;
   font-family: 'Lora';
@@ -128,9 +151,7 @@ img{
   padding-bottom: .75rem;
   font-family: 'Nunito';
 }
-.intro h2{
-  color: #9D00D1;
-}
+
 
 hr.purple{
   border-top: 2px solid #b60af0;
@@ -141,12 +162,6 @@ hr.purple{
 .welcome{
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.project_prev{
-  background: linear-gradient(#FFABD900 0%,  #E79EFF 3%, #E79EFF 97%, #FFABD900 100% ) ;
-  padding-top: 2rem;
-  color: #FFFFFF;
 }
 
 hr.footer{
@@ -201,6 +216,11 @@ footer h3{
 .button-value:active, .button-value:hover, .modal-btn:hover {
   background-color: #0A0AF0;
   color: #ffffff !important;
+}
+.project_prev{
+  background: linear-gradient(#FFABD900 0%,  #E79EFF 3%, #E79EFF 97%, #FFABD900 100% ) ;
+  padding-top: 2rem;
+  color: #FFFFFF;
 }
 #project_prev h1{
   color: #0A0AF0 !important;
