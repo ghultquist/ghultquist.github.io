@@ -81,8 +81,8 @@ p{
   color: #F5199D;
 }
 @keyframes color_cartoon {
-  0%   {color:#9D00D1;}
-  50%   {color:#9D00D1;}
+  0%   {color:#707070;}
+  50%   {color:#707070;}
   100% {color:#F5199D;}
 }
 
@@ -90,33 +90,43 @@ p{
   animation-name: color_color;
   animation-duration: 3s;
   animation-iteration-count: 1;
-  color:#0a0af0;
+  color:#9D00D1;
 }
 @keyframes color_color {
-  0%   {color:#9D00D1;}
-  66%   {color:#9D00D1;}
-  100% {color:#0a0af0;}
+  0%   {color:#707070;}
+  66%   {color:#707070;}
+  100% {color:#9D00D1;}
 }
 
 .create_h2{
   animation-name: color_create;
   animation-duration: 4s;
   animation-iteration-count: 1;
-  color:#D60000;
+  color:#0a0af0;
 }
 @keyframes color_create {
-  0%   {color:#9D00D1;}
-  75%   {color:#9D00D1;}
-  100% {color:#D60000;}
+  0%   {color:#707070;}
+  75%   {color:#707070;}
+  100% {color:#0a0af0;}
 }
-
+.alliteration{
+  animation-name: allit;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  color:#707070;
+}
+@keyframes allit {
+  0%   {color:#FFE0F1;}
+  80%   {color:#FFE0F1;}
+  100% {color:#707070;}
+}
 h1{
   color: #FF0000;
   font-size: 3rem;
   font-weight: 900;
 }
 h2{
-  color: #9D00D1;
+  color: #707070;
   font-size: 2rem;
   font-weight: 600;
   font-family: 'Lora';
@@ -130,8 +140,8 @@ h4{
   color:#9D00D1;
   font-weight: 500;
   font-family: 'Lora';
-  font-size: 1.25rem;
-  padding-bottom: .5rem;
+  font-size: 1.2rem;
+  padding-bottom: .5em;
 }
 h5{
   color:#F5199D;
@@ -149,7 +159,7 @@ h6{
   font-size: 1.2rem;
 }
 img{
-  border-radius: 15px;
+  border-radius: 1em;
 }
 .img-framed{
   box-shadow: 0px 0px 10px 3px #AD5CFF;
@@ -166,7 +176,7 @@ img{
 
 
 hr.purple{
-  border-top: 2px solid #b60af0;
+  border-top: .15em solid #b60af0;
   color: #b60af0;
   width: 98.4%;
 }
@@ -177,7 +187,7 @@ hr.purple{
 }
 
 hr.footer{
-  border-top: 2px solid #FFFFFF;
+  border-top: .15em solid #FFFFFF;
   color: #FFFFFF;
   width: 20%;
   margin-left: 40%;
@@ -216,7 +226,7 @@ footer h3{
 
 /*Project filter 1*/
 .button-value, .modal-btn {
-  border: 2px solid #0A0AF0;
+  border: .15em solid #0A0AF0;
   padding: 1em 2.2em;
   border-radius: 3em;
   background-color: transparent;
@@ -257,7 +267,7 @@ footer h3{
   max-width: 20em;
   margin-top: 1em;
   padding: 1em;
-  border-radius: 15px;
+  border-radius: 1em;
   box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.1);
 }
 #projects .card:hover{
@@ -281,7 +291,7 @@ footer h3{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 6.5em; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -296,7 +306,7 @@ footer h3{
   border-radius: 2em;
   background-color: #FFE0F1;
   margin: auto;
-  padding: 20px;
+  padding: 1.25em;
   border: 1px solid #888;
   width: 80%;
 }
@@ -332,7 +342,7 @@ footer h3{
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 28px;
+  font-size: 1.75em;
   font-weight: bold;
 }
 

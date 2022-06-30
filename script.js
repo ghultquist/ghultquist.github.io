@@ -32,7 +32,7 @@ let projects = {
       tools: "After Effects, Illustrator, Clip Studio Paint",
       link: "https://www.youtube.com/watch?v=oYdqPIslSvs",
       description: "A short animation about the airport.",
-      long_desc: "",
+      long_desc: "This was the first project I completed as a part of my TCOM632 Motion Graphic Animation class. It features my character, X (they/them), sleepily navigating the airport. \n\nWe were tasked with exploring the aesthetics of an animation and emulating an element of its style in an animation through After Effects. I chose the animation technique of Unmoving Plaid (AKA perspective incorrect texturing), which is used in the cartoon Chowder! You can see this in the static patterns on both X’s monitor and sweatshirt.",
       image: "assets/x_airport.png",
       emoji: "✈️",
     },
