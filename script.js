@@ -37,6 +37,18 @@ let projects = {
       emoji: "✈️",
     },
     {
+      projectName: "B.L.T. (Beckoning eLdritch Terror)",
+      category: "video",
+      year: "2022",
+      role: "Artist & Animator",
+      tools: "After Effects, Illustrator",
+      link: "https://www.youtube.com/watch?v=LyyCIf4oAek",
+      description: "A short animation about a nasty humming burger.",
+      long_desc: "This is a short animation I made about a nasty humming burger and the woman who couldn't resist it. \n(Haven't we all been there?)\n\nThis was my final project for my TCOM632 Motion Graphic Animation class. All art assets were made using Illustrator & animated in After Effects. It features my characters Oculara, X, & Teeth.\n\nThe voices were made using the sound assets from the Kenney Game Assets pack and the music at the end is the wonderful HoliznaCC0 who creates public domain (CC0) music!",
+      image: "assets/blt.png",
+      emoji: "🍔",
+    },
+    {
       projectName: "Hm? Hm!",
       category: "video",
       year: "2022",
