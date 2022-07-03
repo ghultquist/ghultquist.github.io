@@ -163,7 +163,8 @@ var openLink = function(i){
   window.open(i.currentTarget.link);
 }
 
-//create information overlay
+
+//create "more info" modal
 var openMoreInfo = function(i){
   //Create Modal
   var modal = document.getElementById("modal");
@@ -173,6 +174,11 @@ var openMoreInfo = function(i){
   //container
   let container = document.createElement("div");
   container.classList.add("container");
+  //close btn
+  let close = document.createElement("span");
+  close.classList.add("close");
+  close.innerHTML = "&times;";
+  container.appendChild(close);
   //project name
   let name = document.createElement("h1");
   name.innerText = i.currentTarget.name + " (" + i.currentTarget.year + ")";
@@ -257,13 +263,17 @@ var openMoreInfo = function(i){
   $('body').css('overflow', 'hidden');
 
   // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
+  window.onclick  = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
       $('body').css('overflow', 'auto');
       modal.removeChild(box);
-
     }
+  }
+  close.onclick = function(event){
+    modal.style.display = "none";
+    $('body').css('overflow', 'auto');
+    modal.removeChild(box);
   }
 }
 

@@ -333,6 +333,11 @@ footer h3{
 #modal h6, #modal p{
   padding-bottom: .7em;
 }
+.modal-header {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
 .modal-btn{
   font-family: 'Nunito';
   font-weight: 900;
@@ -342,13 +347,13 @@ footer h3{
 .close {
   color: #aaaaaa;
   float: right;
-  font-size: 1.75em;
+  font-size: 2.5em;
   font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #FF0000;
   text-decoration: none;
   cursor: pointer;
 }
