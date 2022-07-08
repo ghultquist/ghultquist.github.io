@@ -1,16 +1,21 @@
 let projects = {
   data: [
     {
-      projectName: "X",
+      projectName: "Axil",
       category: "game",
-      year: "2022",
-      role: "Programmer, Artist, & Writer",
-      tools: "Godot (game engine), Aseprite (pixel art software)",
-      link: "https://gbuggy.itch.io/untitled-thesis",
-      description: "A game about loneliness created for my master's thesis.",
-      long_desc: "This game was created as a creative project for my master’s degree. It features my character, X, trying to navigate an evening out while mitigating feelings of loneliness.\n\nThis game was designed using research on loneliness from the BBC Loneliness Experiment to inspire the mechanisms and obstacles. The UX testing method of A/B testing was used to provide guidance on the character design. Iterative playtesting was also conducted.",
-      image: "assets/game_scrnshot169.png",
-      emoji: "📺",
+      year: "2020",
+      role: "Programmer & UX/UI Designer",
+      tools: "Godot (game engine)",
+      link: "https://gbuggy.itch.io/axil",
+      description: "A video game about gardening... in space!",
+      long_desc: "A video game about gardening... in space!\n\nAs a part of the CS490 Software Production Studio, I worked on a multidisciplinary team of 6 students tasked with creating an original video game.  I programmed using Godot, designed the UI, and collaboratively ideated to make Axil, an extraterrestrial plant growing simulation game.",
+      image: "assets/axil.jpg",
+      imgdesc0: "The UI of the spaceship's main deck in Axil.",
+      imagealt1:"assets/axil_seeds.png",
+      imgdesc1: "The seed selection interface after the player's rover explores a planet.",
+      imagealt2:"assets/axil_journal_potato.png",
+      imgdesc2: "The journal where plant information is collected in Axil.",
+      emoji: "🌻",
     },
     {
       projectName: "YEPT Website",
@@ -22,6 +27,11 @@ let projects = {
       description: "A website created for Youth Environmental Press Team.",
       long_desc: "During the 2021-2022 academic year, I worked on a team of five students to provide design thinking solutions for an organization of high school journalists, the Youth Environmental Press Team (YEPT). \n\nThrough observations and ideation sessions with our primary stakeholders on this project (the students and leaders of the organization), we determined that their most critical problem space to address was member recruitment and retention. This was due to a lack of organizational structure and presence. To address this problem we ultimately created a website, a workshop series, and style guide for YEPT.\n\nAs the only member with programming experience, I spearheaded the development of the website. I also led communication between my team and the high school students and led the various usability and design thinking sessions we held with them. They were awesome to work with and so enthusiastic for the projects we were working on with them!",
       image: "assets/yept.png",
+      imgdesc0: "The homepage of the YEPT website.",
+      imagealt1:" ",
+      imgdesc1: "",
+      imagealt2:" ",
+      imgdesc2: "",
       emoji: "🌱",
     },
     {
@@ -29,36 +39,17 @@ let projects = {
       category: "video",
       year: "2022",
       role: "Artist & Animator",
-      tools: "After Effects, Illustrator, Clip Studio Paint",
+      tools: "After Effects, Illustrator, Clip Studio Paint, Premiere Pro",
       link: "https://www.youtube.com/watch?v=oYdqPIslSvs",
       description: "A short animation about the airport.",
       long_desc: "This was the first project I completed as a part of my TCOM632 Motion Graphic Animation class. It features my character, X (they/them), sleepily navigating the airport. \n\nWe were tasked with exploring the aesthetics of an animation and emulating an element of its style in an animation through After Effects. I chose the animation technique of Unmoving Plaid (AKA perspective incorrect texturing), which is used in the cartoon Chowder! You can see this in the static patterns on both X’s monitor and sweatshirt.",
       image: "assets/x_airport.png",
+      imgdesc0: "",
+      imagealt1:" ",
+      imgdesc1: "",
+      imagealt2:" ",
+      imgdesc2: "",
       emoji: "✈️",
-    },
-    {
-      projectName: "B.L.T. (Beckoning eLdritch Terror)",
-      category: "video",
-      year: "2022",
-      role: "Artist & Animator",
-      tools: "After Effects, Illustrator",
-      link: "https://www.youtube.com/watch?v=LyyCIf4oAek",
-      description: "A short animation about a nasty humming burger.",
-      long_desc: "This is a short animation I made about a nasty humming burger and the woman who couldn't resist it. \n(Haven't we all been there?)\n\nThis was my final project for my TCOM632 Motion Graphic Animation class. All art assets were made using Illustrator & animated in After Effects. It features my characters Oculara, X, & Teeth.\n\nThe voices were made using the sound assets from the Kenney Game Assets pack and the music at the end is the wonderful HoliznaCC0 who creates public domain (CC0) music!",
-      image: "assets/blt.png",
-      emoji: "🍔",
-    },
-    {
-      projectName: "Hm? Hm!",
-      category: "video",
-      year: "2022",
-      role: "Artist & Animator",
-      tools: "After Effects, Illustrator",
-      link: "https://www.youtube.com/watch?v=9GBS6n2jllg",
-      description: "A short animation about surprises.",
-      long_desc: "This is a short animation of my oc, X (they/them), looking around for something... suspicious. \n\nThis was a project I completed as a part of my TCOM632 Motion Graphic Animation class! The objective was to utilize a particle generator in an animation in After Effects.",
-      image: "assets/x_hm.png",
-      emoji: "🎉",
     },
     {
       projectName: "YouTour",
@@ -70,31 +61,81 @@ let projects = {
       description: "An app prototype about being a tourist in your own town.",
       long_desc: "YouTour is an app that encourages users to explore any place and discover hidden gems, whether it be in their hometown or a city completely new to them. The prototype facilitates this by providing local places to eat, shop, and visit around the user’s location. \n\nWhiteboard sketches were initially created and then refined into a full wireframe using Figma. During the production of this prototype, A/B testing was conducted to determine what layout would be most user-friendly and what features would prove most useful for users.",
       image: "assets/youtour.png",
+      imgdesc0: "",
+      imagealt1:" ",
+      imgdesc1: "",
+      imagealt2:" ",
+      imgdesc2: "",
       emoji: "📱",
+    },
+    {
+      projectName: "X",
+      category: "game",
+      year: "2022",
+      role: "Programmer, Artist, & Writer",
+      tools: "Godot (game engine), Aseprite (pixel art software)",
+      link: "https://gbuggy.itch.io/untitled-thesis",
+      description: "A game about loneliness created for my master's thesis.",
+      long_desc: "This game was created as a creative project for my master’s degree. It features my character, X, trying to navigate an evening out while mitigating feelings of loneliness.\n\nThis game was designed using research on loneliness from the BBC Loneliness Experiment to inspire the mechanisms and obstacles. The UX testing method of A/B testing was used to provide guidance on the character design. Iterative playtesting was also conducted.",
+      image: "assets/game_scrnshot169.png",
+      imgdesc0: "",
+      imagealt1:"assets/x_scrnshot.png",
+      imgdesc1: "",
+      imagealt2:" ",
+      imgdesc2: "",
+      emoji: "📺",
     },
     {
       projectName: "Tick",
       category: "video",
       year: "2021",
-      role: "Special Effects Artist & Production Assistant",
+      role: "Special Effects Artist, Production Assistant, & Slate Operator",
       tools: "Makeup & Props",
       link: "https://www.youtube.com/watch?v=qb5VQy7VpfE",
       description: "A short experimental horror film.",
       long_desc: "A surreal short film by my friend, Ian Mitchell. The film tells the story of a sanitary-focused recluse whose routine is disrupted. \n\nBecause of Ian’s want for a stylized look to the blood used in this short, I made several different types of blood for this film utilizing various amounts of food coloring, cocoa powder, simple syrup, and hair gel!",
       image: "assets/tick_BTS169.png",
-      emoji: "⏰",
+      imgdesc0: "Tick's director and me reviewing my makeup application on the film's leading actress.",
+      imagealt1:"assets/tick_scrnshot.png",
+      imgdesc1: "A still from the climax of the film.",
+      imagealt2:"assets/superfoot_award_169.png",
+      imgdesc2: "The crew from a film I had worked on with Tick's director, Ian Mitchell, receiving an award for Best Alternative Film at Ball State's 2019 Frog Baby Film Festival.",
+      emoji: "🩸",
     },
     {
-      projectName: "Axil",
-      category: "game",
-      year: "2020",
-      role: "Programmer",
-      tools: "Godot (game engine)",
-      link: "https://gbuggy.itch.io/axil",
-      description: "A video game about gardening... in space!",
-      long_desc: "A video game about gardening... in space!\n\nAs a part of the CS490 Software Production Studio, I worked on a multidisciplinary team of 6 students tasked with creating an original video game. I programmed using Godot; taught and learned from my group mates in the ways of art, programming, and production; researched licensing; and collaboratively ideated to make Axil, an extraterrestrial plant growing simulation game.",
-      image: "assets/axil.jpg",
-      emoji: "🌻",
+      projectName: "B.L.T. (Beckoning eLdritch Terror)",
+      category: "video",
+      year: "2022",
+      role: "Artist & Animator",
+      tools: "After Effects, Illustrator, Premiere Pro",
+      link: "https://www.youtube.com/watch?v=LyyCIf4oAek",
+      description: "A short animation about a nasty humming burger.",
+      long_desc: "This is a short animation I made about a nasty humming burger and the woman who couldn't resist it. \n(Haven't we all been there?)\n\nThis was my final project for my TCOM632 Motion Graphic Animation class. All art assets were made using Illustrator & animated in After Effects. It features my characters Oculara, X, & Teeth.\n\nThe voices were made using the sound assets from the Kenney Game Assets pack and the music at the end is the wonderful HoliznaCC0 who creates public domain (CC0) music!",
+      image: "assets/blt.png",
+      imgdesc0: "",
+      imagealt1:" ",
+      imgdesc1: "",
+      imagealt2:" ",
+      imgdesc2: "",
+      emoji: "🍔",
+    },
+    /*
+    {
+      projectName: "Hm? Hm!",
+      category: "video",
+      year: "2022",
+      role: "Artist & Animator",
+      tools: "After Effects, Illustrator",
+      link: "https://www.youtube.com/watch?v=9GBS6n2jllg",
+      description: "A short animation about surprises.",
+      long_desc: "This is a short animation of my oc, X (they/them), looking around for something... suspicious. \n\nThis was a project I completed as a part of my TCOM632 Motion Graphic Animation class! The objective was to utilize a particle generator in an animation in After Effects.",
+      image: "assets/x_hm.png",
+      imgdesc0: "",
+      imagealt1:"",
+      imgdesc1: "",
+      imagealt2:"",
+      imgdesc2: "",
+      emoji: "🎉",
     },
     {
       projectName: "Queer Chocolatier",
@@ -106,6 +147,11 @@ let projects = {
       description: "A short documentary about a local LGBTQ+ sweets shop.",
       long_desc: "A short documentary about a local LGBTQ+ sweets shop, the Queer Chocolatier!This is a production by the university film group I was president of, Fringed. \n\nIt was a great time getting to chat with and learn about chocolate from the shop’s head queer herself, Morgan Roddy.",
       image: "assets/queerchocolatier.png",
+      imgdesc0: "",
+      imagealt1:"",
+      imgdesc1: "",
+      imagealt2:"",
+      imgdesc2: "",
       emoji: "🌈",
     },
     {
@@ -118,6 +164,11 @@ let projects = {
       description: "A short horror film about agoraphobia.",
       long_desc: "A short film about a person suffering from agoraphobia who refuses to leave their house until strange things start happening and paranoia overcomes them. This is a production by the university film group I was president of, Fringed. This film was featured in Ball State's 2020 Frog Baby Film Festival. \n\nI worked with my friend & fellow film club member, Aaron Dwyer, to create this concept, write this script, and direct this short horror flick! Ironically for a film about being trapped in the house made in 2020, this was written and filmed pre-pandemic.",
       image: "assets/hsh.png",
+      imgdesc0: "",
+      imagealt1:"",
+      imgdesc1: "",
+      imagealt2:"",
+      imgdesc2: "",
       emoji: "🏡",
     },
     {
@@ -130,6 +181,11 @@ let projects = {
       description: "A short surreal film about neighbors.",
       long_desc: "A surreal short film by my friend, Ian Mitchell. The film focuses on a pair of roommates attempting to compromise with their raucous neighbor. This film won Best Alternative Film at Ball State's 2019 Frog Baby Film Festival. \n\nThis was my first time doing special effects makeup for a film, which you can see on Atlas and Austin. I had done costume makeup on myself before, but a black eye has to be a bit more convincing than zombie prosthetics!",
       image: "assets/superfoot_award_169.png",
+      imgdesc0: "",
+      imagealt1:"",
+      imgdesc1: "",
+      imagealt2:"",
+      imgdesc2: "",
       emoji: "🐰",
     },
     {
@@ -142,6 +198,11 @@ let projects = {
       description: "A short documentary featuring Muncie's DJ Jannell.",
       long_desc: "A short documentary featuring DJ Jannell, a DJ in Muncie! This is a production by the university film group I was president of, Fringed. \n\nThis was my first time interviewing someone for a documentary, but sitting down with someone as open and down-to-Earth as Jannell Summers made it feel like any old conversation.",
       image: "assets/dj-jannell.png",
+      imgdesc0: "",
+      imagealt1:"",
+      imgdesc1: "",
+      imagealt2:"",
+      imgdesc2: "",
       emoji: "🎧",
     },
     {
@@ -154,8 +215,15 @@ let projects = {
       description: "A short documentary about Muncie's roller derby team.",
       long_desc: "A short documentary about Muncie's roller derby team, the Cornfed Derby Dames! This is a production by the university film group I was president of, Fringed. This film was featured in Ball State's 2019 Frog Baby Film Festival. \n\n Having started filming in the fall of 2017, this was the first production I worked on while at university. Filming B-roll during a homecoming parade and roller derby practice proved challenging, but also a total blast!",
       image: "assets/cornfed.png",
+      imgdesc0: "",
+      imagealt1:"",
+      imgdesc1: "",
+      imagealt2:"",
+      imgdesc2: "",
       emoji: "🌽",
     },
+
+    */
   ],
 };
 
@@ -191,10 +259,39 @@ var openMoreInfo = function(i){
   let imgContainer = document.createElement("div");
   imgContainer.classList.add("col-lg-6");
   imgContainer.classList.add("image-container");
-  //img tag
+  //img0 tag
   let image = document.createElement("img");
   image.setAttribute("src", i.currentTarget.image);
   imgContainer.appendChild(image);
+  //img0 desc
+  let imgdesc0 = document.createElement("p");
+  imgdesc0.classList.add("imgdesc");
+  imgdesc0.innerHTML = i.currentTarget.imgdesc0;
+  imgContainer.appendChild(imgdesc0);
+
+  if (i.currentTarget.imagealt1 != " "){
+    //img1 tag
+    let image1 = document.createElement("img");
+    image1.setAttribute("src", i.currentTarget.imagealt1);
+    imgContainer.appendChild(image1);
+    //img1 desc
+    let imgdesc1 = document.createElement("p");
+    imgdesc1.classList.add("imgdesc");
+    imgdesc1.innerHTML = i.currentTarget.imgdesc1;
+    imgContainer.appendChild(imgdesc1);
+  }
+  if (i.currentTarget.imagealt2 != " "){
+    //img2 tag
+    let image2 = document.createElement("img");
+    image2.setAttribute("src", i.currentTarget.imagealt2);
+    imgContainer.appendChild(image2);
+    //img2 desc
+    let imgdesc2 = document.createElement("p");
+    imgdesc2.classList.add("imgdesc");
+    imgdesc2.innerHTML = i.currentTarget.imgdesc2;
+    imgContainer.appendChild(imgdesc2);
+  }
+
   row.appendChild(imgContainer);
 
   //metadata
@@ -317,6 +414,11 @@ for (let i of projects.data) {
   card.description = i.description;
   card.long_desc = i.long_desc;
   card.image = i.image;
+  card.imgdesc0 = i.imgdesc0;
+  card.imagealt1 = i.imagealt1;
+  card.imgdesc1 = i.imgdesc1;
+  card.imagealt2 = i.imagealt2;
+  card.imgdesc2 = i.imgdesc2;
   card.emoji = i.emoji
 }
 

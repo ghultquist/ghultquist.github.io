@@ -322,7 +322,7 @@ footer h3{
 }
 */
 #modal img{
-  width: 100%;
+  width: 80%;
 }
 
 #modal .container{
@@ -333,6 +333,11 @@ footer h3{
 }
 #modal h6, #modal p{
   padding-bottom: .7em;
+}
+.imgdesc{
+  font-style: italic;
+  font-size: .8rem;
+  color: #8E0658;
 }
 .modal-header {
   padding: 2px 16px;
