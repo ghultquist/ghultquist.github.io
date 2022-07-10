@@ -6,12 +6,12 @@ html, body {
   height: 100%;
   width: 100%;
   font-family: 'Nunito';
-  background-color: #FFE0F1;
-  color: #9D00D1;
+  background-color: #FFF0FF;
+  color: #7E00A8;
 }
 p{
   font-family: 'Lora';
-  color: #9D00D1;
+  color: #7E00A8;
 }
 /*
 .play-on-hover{
@@ -31,7 +31,6 @@ p{
   color: #000000 !important;
   font-weight: 900;
   text-shadow: 1px 1px 0 #B5B5FC, 2px 2px 0 #E28AFF, 3px 3px 0 #FCB6E0;
-  font-style: italic;
   padding-bottom: 1rem;
 }
 .hi-gwyn:hover{
@@ -49,7 +48,7 @@ p{
   background: linear-gradient(#FFC6FF 75%,  #FFABD900 100%);
 }
 .navbar-toggler-icon {
-  border-color: #9D00D1;
+  border-color: #7E00A8;
 }
 .sticky-top {
   position: fixed;
@@ -62,7 +61,7 @@ p{
 .nav-link{
   font-size: 1.1em !important;
   font-weight: 900;
-  color: #9D00D1 !important;
+  color: #7E00A8 !important;
 }
 .nav-link:active, .nav-link:hover{
   color: #0a0af0 !important;
@@ -90,12 +89,12 @@ p{
   animation-name: color_color;
   animation-duration: 3s;
   animation-iteration-count: 1;
-  color:#9D00D1;
+  color:#7E00A8;
 }
 @keyframes color_color {
   0%   {color:#707070;}
   66%   {color:#707070;}
-  100% {color:#9D00D1;}
+  100% {color:#7E00A8;}
 }
 
 .create_h2{
@@ -116,12 +115,12 @@ p{
   color:#707070;
 }
 @keyframes allit {
-  0%   {color:#FFE0F1;}
-  80%   {color:#FFE0F1;}
+  0%   {color:#FFF0FF;}
+  80%   {color:#FFF0FF;}
   100% {color:#707070;}
 }
 h1{
-  color: #FF0000;
+  color: #0A0AF0;
   font-size: 3rem;
   font-weight: 900;
 }
@@ -137,10 +136,10 @@ h3{
   font-weight: 900;
 }
 h4{
-  color:#9D00D1;
+  color:#7E00A8;
   font-weight: 500;
   font-family: 'Lora';
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   padding-bottom: .5em;
 }
 h5{
@@ -149,7 +148,7 @@ h5{
   font-size: 1.25rem;
 }
 h5:hover{
-  color: #FF0000;
+  color: #8E0658;
   cursor: pointer;
 }
 h6{
@@ -264,7 +263,7 @@ footer h3{
 
 }
 #projects .card{
-  background-color: #FFE0F1;
+  background-color: #FFF0FF;
   max-width: 20em;
   margin-top: 1em;
   padding: 1em;
@@ -305,7 +304,7 @@ footer h3{
 /* Modal Content */
 .modal-content {
   border-radius: 2em;
-  background-color: #FFE0F1;
+  background-color: #FFF0FF;
   margin: auto;
   padding: 1.25em;
   border: 1px solid #888;
@@ -336,7 +335,7 @@ footer h3{
 }
 .imgdesc{
   font-style: italic;
-  font-size: .8rem;
+  font-size: 1rem;
   color: #8E0658;
 }
 .modal-header {
@@ -359,7 +358,7 @@ footer h3{
 
 .close:hover,
 .close:focus {
-  color: #FF0000;
+  color: #8E0658;
   text-decoration: none;
   cursor: pointer;
 }
