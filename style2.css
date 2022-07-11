@@ -201,7 +201,7 @@ hr.footer{
   color: #FFFFFF;
 }
 footer{
-  background: linear-gradient(#FFABD900 0%,  #E6008A 20%) ;
+  background: linear-gradient(#FFABD900 0%,  #F5199D 20%) ;
   padding-top: 1rem;
   color: #FFFFFF;
   font-size: 1.5em;
@@ -363,6 +363,40 @@ footer h3{
   cursor: pointer;
 }
 
+.float, .static_to_top_button{
+  background-color:#F5199D;
+	color:#FFF0FF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #0000;
+  cursor:pointer;
+}
+.static_to_top_button{
+  display: none;
+  margin:auto;
+  width:5rem;
+  height:5rem;
+}
+.float{
+  position:fixed;
+  bottom:3rem;
+  right:3rem;
+  width:4rem;
+  height:4rem;
+}
+.float:hover, .static_to_top_button:hover{
+  color: #E79EFF;
+}
+
+.my-float{
+	margin-top:1.25rem;
+}
+.static-button{
+	margin-top:1.5rem;
+  font-size: 2em;
+}
+
+
 /*---Media Queries --*/
 @media (max-width: 992px) {
 
@@ -396,6 +430,12 @@ footer h3{
 }
 #modal img{
   width: 80%;
+}
+.float{
+  display:none;
+}
+.static_to_top_button{
+  display:block;
 }
 }
 @media (max-width: 576px) {
