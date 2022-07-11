@@ -137,9 +137,9 @@ h3{
 }
 h4{
   color:#7E00A8;
-  font-weight: 500;
+  font-weight: 400;
   font-family: 'Lora';
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   padding-bottom: .5em;
 }
 h5{
@@ -172,7 +172,12 @@ img{
   padding-bottom: .75rem;
   font-family: 'Nunito';
 }
-
+a{
+  color:#0A0AF0;
+}
+a:hover{
+  color:#000000;
+}
 
 hr.purple{
   border-top: .15em solid #b60af0;
@@ -256,6 +261,7 @@ footer h3{
 }
 .image-container {
   text-align: center;
+  padding-bottom: .5rem;
 }
 #projects img {
   max-width: 100%;
@@ -321,7 +327,8 @@ footer h3{
 }
 */
 #modal img{
-  width: 80%;
+  width: 100%;
+  border: 5px solid #8E0658;
 }
 
 #modal .container{
