@@ -5,12 +5,12 @@ let projects = {
       category: "game",
       year: "2020",
       role: "Programmer & UX/UI Designer",
-      tools: "Godot (game engine)",
+      tools: "Godot Engine, GitHub",
       link: "https://gbuggy.itch.io/axil",
       description: "A video game about gardening... in space!",
-      long_desc: "A video game about gardening... in space!\n\nAs a part of the CS490 Software Production Studio, I worked on a multidisciplinary team of 6 students tasked with creating an original video game.  I programmed using Godot, designed the UI, and collaboratively ideated to make Axil, an extraterrestrial plant growing simulation game.",
-      process: "",
-      contribution: "",
+      long_desc: "A video game about gardening... in space!\n\nAs a part of the CS490 Software Production Studio, I worked on a multidisciplinary team of 6 students tasked with creating an original video game. We created Axil, an extraterrestrial horticultural simulator.",
+      process: "Starting as a one-page proposal by one of our lead artists, Emma Fulkerson, Axil bloomed into a fully realized game through iterative development. From concept, to paper prototype, to video game, Axil took form over the course of a semester. On a bimonthly schedule, we conducted both usability tests and playtests.",
+      contribution: "For Axil, contributed as a programmer and the lead UX/UI designer. We programmed the game through Godot Engine and utilized GitHub for version control. As a designer, I created the UI, designed the sound, managed the assets, and led testing for Axil. As a team we collaboratively ideated on mechanisms and plant concepts.",
       image: "assets/axil.jpg",
       imgdesc0: "The UI of the spaceship's main deck in Axil.",
       imagealt1:"assets/axil_seeds.png",
@@ -27,9 +27,9 @@ let projects = {
       tools: "Squarespace, Figma, Premiere Pro (for tutorials)",
       link: "https://www.youthenvironmentalpressteam.org/",
       description: "A website created for Youth Environmental Press Team.",
-      long_desc: "During the 2021-2022 academic year, I worked on a team of five students to provide design thinking solutions for an organization of high school journalists, the Youth Environmental Press Team (YEPT). \n\nThrough observations and ideation sessions with our primary stakeholders on this project (the students and leaders of the organization), we determined that their most critical problem space to address was member recruitment and retention. This was due to a lack of organizational structure and presence. To address this problem we ultimately created a website, a workshop series, and style guide for YEPT.\n\nAs the only member with programming experience, I spearheaded the development of the website. I also led communication between my team and the high school students and led the various usability and design thinking sessions we held with them. They were awesome to work with and so enthusiastic for the projects we were working on with them!",
-      process: "",
-      contribution: "",
+      long_desc: "During the 2021-2022 academic year, I worked on a multidisciplinary team of 5 students to provide design thinking solutions for an organization of high school journalists, the Youth Environmental Press Team (YEPT)",
+      process: "Through observations and ideation sessions with our primary stakeholders on this project (the students and leaders of the organization), we determined that their most critical problem space to address was member recruitment and retention. This was in part due to a lack of organizational structure and individual presence. To address this problem we ultimately created a website, a workshop series, and style guide for YEPT.\n\nThe design thinking sessions focused primarily on determining aspects of the website and style guide. With feedback from these sessions, we were able to create a color palette that reminded users of nature and felt youthful while still conveying professionalism. This palette compliments the font choices of Proxima Nova and Source Serif Pro, which participants favored due to its mix of a clean sans serif for bold headings and a classic serif for ease of readability in the body texts. \n\nConducting usability testing with the students on the website revealed both usability issues and features they desired in their online representation, but struggled to articulate in previous design thinking sessions.",
+      contribution: "As the only member with programming experience, I spearheaded the development of the website. I also led communication between my team and the high school students and led the various usability and design thinking sessions we held with them. They were awesome to work with and so enthusiastic for the projects we were working on with them!",
       image: "assets/yept.png",
       imgdesc0: "The homepage of the YEPT website.",
       imagealt1:"assets/yept_wireframe.png",
@@ -46,9 +46,9 @@ let projects = {
       tools: "After Effects, Illustrator, Premiere Pro",
       link: "https://www.youtube.com/watch?v=LyyCIf4oAek",
       description: "A short animation about a nasty humming burger.",
-      long_desc: "This is a short animation I made about a nasty humming burger and the woman who couldn't resist it. \n(Haven't we all been there?)\n\nThis was my final project for my TCOM632 Motion Graphic Animation class. All art assets were made using Illustrator & animated in After Effects. It features my characters Oculara, X, & Teeth.\n\nThe voices were made using the sound assets from the Kenney Game Assets pack and the music at the end is the wonderful HoliznaCC0 who creates public domain (CC0) music!",
-      process: "",
-      contribution: "",
+      long_desc: "This is a short animation I made about a nasty humming burger and a person who couldn't resist it. \n(Haven't we all been there?)\n\nThis was my final project for my TCOM632 Motion Graphic Animation class. It features my characters Oculara, X, & Teeth!",
+      process: "All art assets were made using Illustrator & animated in After Effects. I storyboarded the concept using Clip Studio Paint.",
+      contribution: "All illustrations, animations, and characters were created by me. I composed the sound design using sound assets from the Kenney Game Assets pack for the voices and music by HoliznaCC0 who creates public domain (CC0) music.",
       image: "assets/blt.png",
       imgdesc0: "A still of the BLT.",
       imagealt1:"assets/blt2.png",
@@ -310,6 +310,7 @@ var openMoreInfo = function(i){
   let metadata = document.createElement("div");
   metadata.classList.add("col-lg-6");
   metadata.classList.add("metadata");
+
   //category
   let category = document.createElement("h6");
   var categoryLabel = document.createElement('span');
@@ -340,10 +341,34 @@ var openMoreInfo = function(i){
   tools.appendChild(toolsLabel);
   tools.appendChild(toolsData);
   metadata.appendChild(tools);
+
   //long_desc
+  let description = document.createElement("div");
   let long_desc = document.createElement("p");
   long_desc.innerText = i.currentTarget.long_desc;
-  metadata.appendChild(long_desc);
+  description.appendChild(long_desc);
+  metadata.appendChild(description);
+
+  let process = document.createElement("div");
+  var processLabel = document.createElement('h4');
+  processLabel.classList.add("bold");
+  processLabel.innerHTML = "Process: "
+  var processData = document.createElement('p');
+  processData.innerText = i.currentTarget.process;
+  process.appendChild(processLabel);
+  process.appendChild(processData);
+  metadata.appendChild(process);
+
+  let contribution = document.createElement("div");
+  contribution.classList.add("btmpadding");
+  var contributionLabel = document.createElement('h4');
+  contributionLabel.classList.add("bold");
+  contributionLabel.innerHTML = "My Contribution: "
+  var contributionData = document.createElement('p');
+  contributionData.innerText = i.currentTarget.contribution;
+  contribution.appendChild(contributionLabel);
+  contribution.appendChild(contributionData);
+  metadata.appendChild(contribution);
 
   //link to project
   let linktoproject = document.createElement("btn");
@@ -425,6 +450,8 @@ for (let i of projects.data) {
   card.link = i.link;
   card.description = i.description;
   card.long_desc = i.long_desc;
+  card.process = i.process;
+  card.contribution = i.contribution;
   card.image = i.image;
   card.imgdesc0 = i.imgdesc0;
   card.imagealt1 = i.imagealt1;
