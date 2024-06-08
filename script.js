@@ -10,7 +10,7 @@ let projects = {
       description: "A video game about gardening... in space!",
       long_desc: "A video game about gardening... in space!\n\nAs a part of the CS490 Software Production Studio, I worked on a multidisciplinary team of 6 students tasked with creating an original video game. We created Axil, an extraterrestrial horticultural simulator.",
       process: "Starting as a one-page proposal by one of our lead artists, Emma Fulkerson, Axil bloomed into a fully realized game through iterative development. From concept, to paper prototype, to video game, Axil took form over the course of a semester. On a bimonthly schedule, we conducted both usability tests and playtests.",
-      contribution: "For Axil, contributed as a programmer and the lead UX/UI designer. We programmed the game through Godot Engine and utilized GitHub for version control. As a designer, I created the UI, designed the sound, managed the assets, and led testing for Axil. As a team we collaboratively ideated on mechanisms and plant concepts.",
+      contribution: "For Axil, I contributed as a programmer and the lead UX/UI designer. We programmed the game using Godot Engine and utilized GitHub for version control. As a designer, I created the UI, designed the sound, managed the assets, and led testing for Axil. As a team we collaboratively ideated on mechanisms and plant concepts.",
       image: "assets/axil.jpg",
       imgdesc0: "The UI of the spaceship's main deck in Axil.",
       imagealt1:"assets/axil_seeds.png",
@@ -24,7 +24,7 @@ let projects = {
       category: "ux/ui",
       year: "2022",
       role: "UX Designer & UI Developer",
-      tools: "Squarespace, Figma, Premiere Pro (for tutorials)",
+      tools: "Squarespace, Figma, Premiere Pro",
       link: "https://www.youthenvironmentalpressteam.org/",
       description: "A website created for Youth Environmental Press Team.",
       long_desc: "During the 2021-2022 academic year, I worked on a multidisciplinary team of 5 students to provide design thinking solutions for an organization of high school journalists, the Youth Environmental Press Team (YEPT)",
@@ -260,7 +260,7 @@ var openMoreInfo = function(i){
   close.innerHTML = "&times;";
   container.appendChild(close);
   //project name
-  let name = document.createElement("h1");
+  let name = document.createElement("h3");
   name.innerText = i.currentTarget.name + " (" + i.currentTarget.year + ")";
   container.appendChild(name);
   //row
@@ -350,7 +350,7 @@ var openMoreInfo = function(i){
   metadata.appendChild(description);
 
   let process = document.createElement("div");
-  var processLabel = document.createElement('h4');
+  var processLabel = document.createElement('h6');
   processLabel.classList.add("bold");
   processLabel.innerHTML = "Process: "
   var processData = document.createElement('p');
@@ -361,7 +361,7 @@ var openMoreInfo = function(i){
 
   let contribution = document.createElement("div");
   contribution.classList.add("btmpadding");
-  var contributionLabel = document.createElement('h4');
+  var contributionLabel = document.createElement('h6');
   contributionLabel.classList.add("bold");
   contributionLabel.innerHTML = "My Contribution: "
   var contributionData = document.createElement('p');

@@ -2,17 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=VT323&display=swap');
 
 :root{
-  --bg: #FFF0FF;
-  --white: #FFF0FF;
-  --hotpink:#CC288B; 
-  --pink: #FF8AE0;
-  --lightpink:#FFBFFF;
-  --darkdark: #271D4E;
-  --grey: #736A90;
-  --lightpurple: #DAA1F8;
-  --purple: #692BE3;
-  --pinkpurple: #9B2AB7;
-  --blue:#172bc5;
+  --bg: #01001A;
+  --white: #01001A;
+  --hotpink:#FF2B5C; 
+  --pink: #FF2B5C;
+  --lightpink:#FF2B5C;
+  --darkdark: #FFD319;
+  --grey: #fff;
+  --lightpurple: #9A34EB;
+  --purple: #FF2B5C;
+  --blue:#FF3DF4;
 }
 
 html, body {
@@ -42,14 +41,14 @@ p{
   letter-spacing: .5rem;
   color: var(--darkdark) !important;
   font-weight: 900;
-  text-shadow: 0.75px 0.75px 0 var(--purple), 1.5px 1.5px 0 var(--lightpurple), 2.25px 2.25px 0 var(--lightpink);
+  text-shadow: 0.75px 0.75px 0 var(--hotpink), 1.5px 1.5px 0 var(--pink), 2.25px 2.25px 0 var(--lightpink);
   padding-bottom: 1rem;
 }
 .hi-gwyn:hover{
   animation-name: nameHover;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  text-shadow: 2px 2px 0 var(--purple), 4px 4px 0 var(--lightpurple), 6px 6px 0 var(--lightpink);
+  text-shadow: 2px 2px 0 var(--hotpink), 4px 4px 0 var(--pink), 6px 6px 0 var(--lightpink);
 }
 @keyframes nameHover {
   0%   {text-shadow: 0.75px 0.75px 0 var(--purple), 1.5px 1.5px 0 var(--lightpurple), 2.25px 2.25px 0 var(--lightpink);}
@@ -57,7 +56,7 @@ p{
 }
 .navbar{
   padding: 1rem;
-  background: linear-gradient(var(--lightpink) 75%,  #FFABD900 100%);
+  background: linear-gradient(var(--bg) 75%,  #FFABD900 100%);
 }
 .navbar-toggler-icon {
   border-color: var(--purple);
@@ -76,7 +75,7 @@ p{
   color: var(--purple) !important;
 }
 .nav-link:active, .nav-link:hover{
-  color: var(--blue) !important;
+  color: var(--darkdark) !important;
 }
 /*
 .sticky-top {
@@ -101,24 +100,24 @@ p{
   animation-name: color_color;
   animation-duration: 4s;
   animation-iteration-count: 1;
-  color:var(--pinkpurple);
+  color:var(--hotpink);
 }
 @keyframes color_color {
   0%   {color:var(--grey);}
   75%   {color:var(--grey);}
-  100% {color:var(--pinkpurple);}
+  100% {color:var(--hotpink);}
 }
 
 .create_h2{
   animation-name: color_create;
   animation-duration: 5s;
   animation-iteration-count: 1;
-  color:var(--hotpink);
+  color:var(--pink);
 }
 @keyframes color_create {
   0%   {color:var(--grey);}
   80%   {color:var(--grey);}
-  100% {color:var(--hotpink);}
+  100% {color:var(--pink);}
 }
 h1{
   color: var(--blue);
@@ -134,15 +133,15 @@ h2{
 }
 h3{
   color: var(--hotpink);
-  font-size: 2.5rem;
+  font-size: 1.75rem;
   font-weight: 900;
-  padding-bottom: 2.5rem;
+  padding-bottom: .5rem;
 }
 h4{
   color:var(--darkdark);
   font-weight: 400;
   font-family: 'Lora';
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding-bottom: .5em;
 }
 h5{
@@ -150,27 +149,31 @@ h5{
   font-weight: 900;
   font-size: 1.25rem;
 }
+h5:hover{
+  color: var(--darkdark);
+  cursor: pointer;
+}
 h6{
   font-family: 'Lora';
-  color:var(--purple);
-  font-weight: 500;
+  color:var(--hotpink);
+  font-weight: 400;
   font-size: 1.2rem;
 }
 img{
   border-radius: 1em;
 }
 .img-framed{
-  box-shadow: 0px 0px 15px 6px var(--lightpurple);
+  box-shadow: 0px 0px 10px 3px var(--purple);
 }
 .intro{
   margin-top: 7rem;
 }
 .intro h1{
-  font-size: 4rem;
-  animation-name: nameHover;
+  font-size: 5rem;
+  /*animation-name: nameHover;
   animation-duration: 1s;
   animation-iteration-count: 1;
-  text-shadow: 2px 2px 0 var(--purple), 4px 4px 0 var(--lightpurple), 6px 6px 0 var(--lightpink);
+  text-shadow: 3px 3px 0 var(--purple), 6px 6px 0 var(--lightpurple), 9px 9px 0 var(--lightpink);*/
   padding-bottom: .75rem;
   font-family: 'Nunito';
 }
@@ -222,7 +225,7 @@ footer h3{
 .fa-itch-io:hover,
 .fa-envelope:hover,
 .fa-file:hover{
-  color: var(--blue);
+  color: var(--darkdark);
 }
 .padding{
   padding-bottom: 1rem;
@@ -232,25 +235,20 @@ footer h3{
   padding-bottom: 2rem;
 }
 
-#about h3{
-  font-size: 1.5rem;
-  padding-bottom: 1rem;
-}
-
 /*Project filter 1*/
 .button-value, .modal-btn {
-  border: .15em solid var(--darkdark);
+  border: .15em solid var(--blue);
   padding: 1em 2.2em;
   border-radius: 3em;
   background-color: transparent;
-  color: var(--darkdark);
+  color: var(--blue);
   font-family: 'Lora';
   font-weight: 700;
   cursor: pointer;
 }
 .button-value:active, .button-value:hover, .modal-btn:hover {
-  background-color: var(--darkdark);
-  color: var(--lightpink) !important;
+  background-color: var(--blue);
+  color: var(--bg) !important;
 }
 .project_prev{
   background: linear-gradient(#FFABD900 0%,  var(--lightpurple) 3%, var(--lightpurple) 97%, #FFABD900 100% ) ;
@@ -258,7 +256,7 @@ footer h3{
   color: var(--bg);
 }
 #project_prev h1{
-  color: var(--darkdark) !important;
+  color: var(--blue) !important;
 }
 #projects {
   display: grid;
@@ -287,10 +285,7 @@ footer h3{
 #projects .card:hover{
   background-color: var(--lightpink);
   cursor: pointer;
-  h5{color: var(--darkdark)!important;}
 }
-#projects .card:hover + 
-
 .bold{
   font-weight: 900;
 }
@@ -359,7 +354,7 @@ footer h3{
 .modal-header {
   padding: 2px 16px;
   background-color: #5cb85c;
-  color: var(--white);
+  color: white;
 }
 .modal-btn{
   font-family: 'Nunito';
@@ -368,7 +363,7 @@ footer h3{
 }
 /* The Close Button */
 .close {
-  color: var(--grey);
+  color: #aaaaaa;
   float: right;
   font-size: 2.5em;
   font-weight: bold;
@@ -376,7 +371,7 @@ footer h3{
 
 .close:hover,
 .close:focus {
-  color: var(--hotpink);
+  color: #8E0658;
   text-decoration: none;
   cursor: pointer;
 }
