@@ -2,7 +2,7 @@ let projects = {
   data: [
     {
       projectName: "Axil",
-      category: "game",
+      category: "Game",
       year: "2020",
       role: "Programmer & UX/UI Designer",
       tools: "Godot Engine, GitHub",
@@ -21,7 +21,7 @@ let projects = {
     },
     {
       projectName: "YEPT Website",
-      category: "ux/ui",
+      category: "UX/UI/Programming",
       year: "2022",
       role: "UX Designer & UI Developer",
       tools: "Squarespace, Figma, Premiere Pro",
@@ -39,27 +39,8 @@ let projects = {
       emoji: "🌱",
     },
     {
-      projectName: "B.L.T. (Beckoning eLdritch Terror)",
-      category: "video",
-      year: "2022",
-      role: "Artist & Animator",
-      tools: "After Effects, Illustrator, Premiere Pro",
-      link: "https://www.youtube.com/watch?v=LyyCIf4oAek",
-      description: "A short animation about a nasty humming burger.",
-      long_desc: "This is a short animation I made about a nasty humming burger and a person who couldn't resist it. \n(Haven't we all been there?)\n\nThis was my final project for my TCOM632 Motion Graphic Animation class. It features my characters Oculara, X, & Teeth!",
-      process: "All art assets were made using Illustrator & animated in After Effects. I storyboarded the concept using Clip Studio Paint. Premiere Pro was used for editing audio.",
-      contribution: "All illustrations, animations, and characters were created by me. I composed the sound design using sound assets from the Kenney Game Assets pack for the voices and music by HoliznaCC0 who creates public domain (CC0) music.",
-      image: "assets/blt.png",
-      imgdesc0: "A still of the BLT.",
-      imagealt1:"assets/blt2.png",
-      imgdesc1: "A close-up shot of my character, Oculara, reacting to the BLT.",
-      imagealt2:"assets/blt3.png",
-      imgdesc2: "A wide shot of X and Oculara after Teeth has taken a bite of the BLT.",
-      emoji: "🍔",
-    },
-    {
       projectName: "YouTour",
-      category: "ux/ui",
+      category: "UX/UI/Programming",
       year: "2021",
       role: "UX & UI Designer",
       tools: "Figma, Illustrator",
@@ -77,8 +58,27 @@ let projects = {
       emoji: "📱",
     },
     {
+      projectName: "B.L.T. (Beckoning eLdritch Terror)",
+      category: "Video",
+      year: "2022",
+      role: "Artist & Animator",
+      tools: "After Effects, Illustrator, Premiere Pro",
+      link: "https://www.youtube.com/watch?v=LyyCIf4oAek",
+      description: "A short animation about a nasty humming burger.",
+      long_desc: "This is a short animation I made about a nasty humming burger and a person who couldn't resist it. \n(Haven't we all been there?)\n\nThis was my final project for my TCOM632 Motion Graphic Animation class. It features my characters Oculara, X, & Teeth!",
+      process: "All art assets were made using Illustrator & animated in After Effects. I storyboarded the concept using Clip Studio Paint. Premiere Pro was used for editing audio.",
+      contribution: "All illustrations, animations, and characters were created by me. I composed the sound design using sound assets from the Kenney Game Assets pack for the voices and music by HoliznaCC0 who creates public domain (CC0) music.",
+      image: "assets/blt.png",
+      imgdesc0: "A still of the BLT.",
+      imagealt1:"assets/blt2.png",
+      imgdesc1: "A close-up shot of my character, Oculara, reacting to the BLT.",
+      imagealt2:"assets/blt3.png",
+      imgdesc2: "A wide shot of X and Oculara after Teeth has taken a bite of the BLT.",
+      emoji: "🍔",
+    },
+    {
       projectName: "X at the Airport",
-      category: "video",
+      category: "Video",
       year: "2022",
       role: "Artist & Animator",
       tools: "After Effects, Illustrator, Clip Studio Paint, Premiere Pro",
@@ -97,8 +97,8 @@ let projects = {
     },
     {
       projectName: "X",
-      category: "game",
-      year: "2022",
+      category: "Game",
+      year: "2024",
       role: "Programmer, Artist, & Writer",
       tools: "Godot Engine, Aseprite (pixel art software)",
       link: "https://gbuggy.itch.io/untitled-thesis",
@@ -114,24 +114,46 @@ let projects = {
       imgdesc2: "X's encounter with a Devourer.",
       emoji: "📺",
     },
-    /*
+    {
+      projectName: "Song Lyric Sync",
+      category: "UX/UI/Programming",
+      year: "2020",
+      role: "Programmer, Technical Writer, & UI Designer",
+      tools: "HTML, JavaScript (Angular), PHP, and MySQL",
+      link: "https://drive.google.com/drive/folders/1W0jqLD59Q8vvEtHMM1-JEoiDF7xEb6U_?usp=sharing",
+      description: "A web application for collaborative music jam sessions.",
+      long_desc: "This project is a progressive web application that allows a sync-and-scroll option for collaboration between jam session leaders and musicians for a music professor at Ball State University.\n\n Song Lyric Sync is a project I completed as a capstone project. I worked with 3 other computer science students: Joe Schmidt, Bradley Shrader, & Toni Tull-Nunn.",
+      process: "We used Scrum methodology along with test-driven development practices to guide our development of Song Lyric Sync. The work was divided among the four of us. Git & GitHub was used for version control.\n\nThroughout the creation of Song Lyric Sync, we produced 4 milestone reports and presented our current status of the project to our client.",
+      contribution: "My contributions included front-end development, reporting on our development process, and creating a user manual for our client. I also worked on the pre-programming phase, including making use case diagrams, a gant chart, and UI mockups.",
+      image: "assets/sls_proto.png",
+      imgdesc0: "The lofi mockup (left). The final UI (right).",
+      imagealt1:"assets/sls_use.png",
+      imgdesc1: "An example of a major use case.",
+      imagealt2:"assets/sls_guide.png",
+      imgdesc2: "A page from the user manual created for the client.",
+      emoji: "🎸",
+    },
     {
       projectName: "Tick",
-      category: "video",
+      category: "Video",
       year: "2021",
       role: "Special Effects Artist, Production Assistant, & Slate Operator",
-      tools: "Makeup & Props",
+      tools: "Makeup, Props, Boom Mic, Zoom Recorder, & LED Lighting Equipment",
       link: "https://www.youtube.com/watch?v=qb5VQy7VpfE",
       description: "A short experimental horror film.",
-      long_desc: "A surreal short film by my friend, Ian Mitchell. The film tells the story of a sanitary-focused recluse whose routine is disrupted. \n\nBecause of Ian’s want for a stylized look to the blood used in this short, I made several different types of blood for this film utilizing various amounts of food coloring, cocoa powder, simple syrup, and hair gel!",
+      long_desc: "A surreal short film by my friend, Ian Mitchell. The film tells the story of a sanitation-obsessed recluse whose routine is disrupted. \n\nBecause of Ian’s want for a stylized look to the blood used in this short, I made several different types of blood for this film utilizing various amounts of food coloring, cocoa powder, simple syrup, and hair gel!",
+      process: "We filmed the short film over the course of 3 shoots the Spring of 2021. Given the time frame, we took a lot of COVID precautionary methods on set, with all crew masking during filming.",
+      contribution: "Being a small set, we all did a little bit of everything. I primarily worked on the special effects, props, and general production assistant duties. I also aided with lighting, sound recording, and slate operating.",
       image: "assets/tick_BTS169.png",
       imgdesc0: "Tick's director and me reviewing my makeup application on the film's leading actress.",
       imagealt1:"assets/tick_scrnshot.png",
-      imgdesc1: "A still from the climax of the film.",
+      imgdesc1: "A still from the climax of the film featuring the blood application.",
       imagealt2:"assets/superfoot_award_169.png",
-      imgdesc2: "The crew from a film I had worked on with Tick's director, Ian Mitchell, receiving an award for Best Alternative Film at Ball State's 2019 Frog Baby Film Festival.",
+      imgdesc2: "The crew from a previous film I had worked on with Tick's director, Ian Mitchell, receiving an award for Best Alternative Film at Ball State's 2019 Frog Baby Film Festival.",
       emoji: "🩸",
-    },
+    }
+
+    /*
     {
       projectName: "Hm? Hm!",
       category: "video",
@@ -374,11 +396,11 @@ var openMoreInfo = function(i){
   let linktoproject = document.createElement("btn");
   linktoproject.classList.add("modal-btn");
 
-  if (i.currentTarget.category == "ux/ui"){
+  if (i.currentTarget.category == "UX/UI/Programming"){
     linktoproject.innerText = "View Project " + i.currentTarget.emoji;
-  } else if (i.currentTarget.category == "video"){
+  } else if (i.currentTarget.category == "Video"){
     linktoproject.innerText = "Watch Video " + i.currentTarget.emoji;
-  } else if (i.currentTarget.category == "game"){
+  } else if (i.currentTarget.category == "Game"){
     linktoproject.innerText = "Play Game " + i.currentTarget.emoji;
   }
   linktoproject.link = i.currentTarget.link;
