@@ -2,7 +2,7 @@ let projects = {
   data: [
     {
       projectName: "Grocery Run",
-      category: "Game",
+      category: "Games/Programming",
       year: "2024",
       role: "Researcher, Programmer, Artist, & Writer",
       tools: "Godot Engine, Aseprite (pixel art software)",
@@ -21,24 +21,25 @@ let projects = {
     },
     {
       projectName: "True Crime, True Representation?",
-      category: "video",
+      category: "Other",
       year: "2022",
-      role: "Artist & Animator",
-      tools: "After Effects, Illustrator",
+      role: "Researcher",
+      tools: "",
       link: "https://www.taylorfrancis.com/chapters/edit/10.4324/9781003225638-5/true-crime-true-representation-race-injustice-narratives-wrongful-conviction-podcasts-robin-blom-gabriel-tait-gwyn-hultquist-ida-cage-melodie-griffin",
       description: "A published chapter on race and injustice narratives in wrongful conviction podcasts ",
-      long_desc: "This is a short animation of my oc, X (they/them), looking around for something... suspicious. \n\nThis was a project I completed as a part of my TCOM632 Motion Graphic Animation class! The objective was to utilize a particle generator in an animation in After Effects.",
+      long_desc: "'True Crim, True Representation?' is a published book chapter that examines the racial representation in podcasts that focus individuals who were wrongly incarcerated.",
+      contribution: "Compiled and interpreted data on race representation in injustice narratives featured in 8 podcasts. Contributed writing on the data findings of the 384 true crime podcast episodes examined. Copy edited and revised citations for the 16-page academic chapter.",
       image: "assets/truecrime_book.jpg",
       imgdesc0: "",
       imagealt1:"",
       imgdesc1: "",
       imagealt2:"",
       imgdesc2: "",
-      emoji: "🎉",
+      emoji: "📚",
     },
     {
       projectName: "Axil",
-      category: "Game",
+      category: "Games/Programming",
       year: "2020",
       role: "Programmer & UX/UI Designer",
       tools: "Godot Engine, GitHub",
@@ -57,7 +58,7 @@ let projects = {
     },
     {
       projectName: "YEPT Website",
-      category: "UX/UI/Programming",
+      category: "UX/UI",
       year: "2022",
       role: "UX Designer & UI Developer",
       tools: "Squarespace, Figma, Premiere Pro",
@@ -76,7 +77,7 @@ let projects = {
     },
     {
       projectName: "YouTour",
-      category: "UX/UI/Programming",
+      category: "UX/UI",
       year: "2021",
       role: "UX & UI Designer",
       tools: "Figma, Illustrator",
@@ -95,7 +96,7 @@ let projects = {
     },
     {
       projectName: "B.L.T. (Beckoning eLdritch Terror)",
-      category: "Video",
+      category: "Other",
       year: "2022",
       role: "Artist & Animator",
       tools: "After Effects, Illustrator, Premiere Pro",
@@ -114,7 +115,7 @@ let projects = {
     },
     {
       projectName: "Song Lyric Sync",
-      category: "UX/UI/Programming",
+      category: "Games/Programming",
       year: "2020",
       role: "Programmer, Technical Writer, & UI Designer",
       tools: "HTML, JavaScript (Angular), PHP, and MySQL",
@@ -133,7 +134,7 @@ let projects = {
     },
     {
       projectName: "Tick",
-      category: "Video",
+      category: "Other",
       year: "2021",
       role: "Special Effects Artist, Production Assistant, & Slate Operator",
       tools: "Makeup, Props, Boom Mic, Zoom Recorder, & LED Lighting Equipment",
@@ -413,11 +414,11 @@ var openMoreInfo = function(i){
   let linktoproject = document.createElement("btn");
   linktoproject.classList.add("modal-btn");
 
-  if (i.currentTarget.category == "UX/UI/Programming"){
+  if (i.currentTarget.category == "UX/UI"){
     linktoproject.innerText = "View Project " + i.currentTarget.emoji;
-  } else if (i.currentTarget.category == "Video"){
-    linktoproject.innerText = "Watch Video " + i.currentTarget.emoji;
-  } else if (i.currentTarget.category == "Game"){
+  } else if (i.currentTarget.category == "Other"){
+    linktoproject.innerText = "View Project " + i.currentTarget.emoji;
+  } else if (i.currentTarget.category == "Games/Programming"){
     linktoproject.innerText = "Play Game " + i.currentTarget.emoji;
   }
   linktoproject.link = i.currentTarget.link;
