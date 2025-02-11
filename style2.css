@@ -274,7 +274,7 @@ footer h3{
 }
 .image-container img {
   border-radius: 15px;
-  border: .2em double var(--lightpurple);
+  box-shadow: 0px 0px 5px 0px var(--lightpurple);
 }
 #projects img {
   max-width: 100%;
